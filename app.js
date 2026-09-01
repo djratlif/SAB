@@ -255,6 +255,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initBeerFilters();
   initCalendar();
   initEventListeners();
+
+  // Check URL hash for direct modal triggers
+  if (window.location.hash === '#staff') {
+    setTimeout(() => {
+      openStaffModal();
+    }, 150);
+  }
 });
 
 // ==========================================================================

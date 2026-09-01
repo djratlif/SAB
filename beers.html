@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Our Beers On Tap | Southern Appalachian Brewery &bull; Hendersonville, NC</title>
+  <meta name="description" content="Explore our rotating draft list of Belgian ales, crisp Bohemian lagers, aromatic IPAs, and rich stouts brewed in Hendersonville, NC. Pair with giant Bavarian pretzels.">
+  <meta name="theme-color" content="#1E3352">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Southern Appalachian Brewery Home">
+        <img src="assets/images/logo.png" alt="Southern Appalachian Brewery Logo" class="header-logo-img">
+        <div class="brand-text">
+          <span class="brand-script">historic downtown</span>
+          <span class="brand-title">HENDERSONVILLE, NC</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="beers.html" class="nav-link active">Our Beers</a></li>
+          <li><a href="events.html" class="nav-link">Music &amp; Events</a></li>
+          <li><a href="taproom.html" class="nav-link">The Patio &amp; Taproom</a></li>
+          <li><a href="community.html" class="nav-link">Community &amp; Story</a></li>
+          <li><a href="contact.html" class="nav-link">Hours &amp; Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm header-visit-btn">Visit Us</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="drawer-logo-img">
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">🏡 Home</a></li>
+        <li><a href="beers.html" class="mobile-nav-link active">🍺 Fresh Beers On Tap</a></li>
+        <li><a href="events.html" class="mobile-nav-link">📅 Music, Shows &amp; Calendar</a></li>
+        <li><a href="taproom.html" class="mobile-nav-link">🥨 The Patio &amp; Food Trucks</a></li>
+        <li><a href="community.html" class="mobile-nav-link">🎨 Local Art &amp; Community Story</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">📍 Hours, Map &amp; Directions</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <div class="drawer-contact-info">
+          <p>📞 <a href="tel:8286841235">(828) 684-1235</a></p>
+          <p>📍 822 Locust St, Downtown Hendersonville, NC</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb-trail" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">&rsaquo;</span>
+        <span>Our Beers</span>
+      </nav>
+      <span class="section-script">honest mountain craft</span>
+      <h1 class="page-banner-title">Fresh Beers On Tap</h1>
+      <div class="watercolor-divider" aria-hidden="true"></div>
+      <p class="page-banner-subtitle">
+        Brewed 30 feet from where it's poured. Small-batch Belgian ales, crisp Bohemian lagers, hoppy IPAs, and velvety stouts made with pure Appalachian mountain water.
+      </p>
+    </div>
+  </section>
+
+  <!-- Beers Catalog Section -->
+  <main class="section beers-section">
+    <div class="container">
+      <!-- Category Filters -->
+      <div class="beer-filters" role="tablist" aria-label="Beer category filters">
+        <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Brews (8)</button>
+        <button class="filter-pill" data-filter="belgian" role="tab" aria-selected="false">Belgian &amp; Farmhouse</button>
+        <button class="filter-pill" data-filter="ipa" role="tab" aria-selected="false">IPAs &amp; Hoppy</button>
+        <button class="filter-pill" data-filter="lager-ale" role="tab" aria-selected="false">Lagers &amp; Ambers</button>
+        <button class="filter-pill" data-filter="dark" role="tab" aria-selected="false">Stouts &amp; Dark</button>
+      </div>
+
+      <!-- Beers Grid (Rendered dynamically by app.js) -->
+      <div class="beers-grid" id="beers-grid"></div>
+
+      <!-- Flight & Pretzel Experience Card -->
+      <div class="flight-community-card">
+        <div class="flight-text">
+          <span class="badge badge-clay">Taproom Ritual</span>
+          <h3>Try a Mountain Beer Flight</h3>
+          <p>
+            Can't settle on one style? Grab a four-pour flight served on handmade wooden paddles. We always recommend pairing your flight with a giant hot soft pretzel from our friends at <strong>Underground Baking Co.</strong> delivered fresh with stone-ground mustard.
+          </p>
+          <div class="flight-tags">
+            <span>🍺 4 x 4oz Pours of Your Choice</span>
+            <span>🥨 Fresh Salted Pretzels</span>
+            <span>📦 Growlers &amp; Cans To-Go</span>
+          </div>
+        </div>
+        <div class="flight-img-wrapper">
+          <img src="assets/images/beer-pretzels.jpg" alt="Craft beer flight and giant Bavarian pretzel" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Brewery Philosophy Grid -->
+      <div style="margin-top: 3.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div class="homey-card text-center">
+          <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🌾</span>
+          <h4>Authentic Ingredients</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Imported German and Belgian Pilsen malts, Saaz noble hops, and select Pacific Northwest varieties.</p>
+        </div>
+        <div class="homey-card text-center">
+          <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🚰</span>
+          <h4>Mountain Water</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Pure Blue Ridge mountain water creates a pristine, crisp baseline for every batch brewed.</p>
+        </div>
+        <div class="homey-card text-center">
+          <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">📦</span>
+          <h4>Beer To-Go</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Fresh 32oz and 64oz growler fills available directly from the tap so you can take SAB home.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL: Beer Detail & Pairing Modal -->
+  <div class="modal-backdrop" id="beer-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="badge badge-mountain" id="beer-modal-style">Style</span>
+          <h3 id="beer-modal-name">Beer Name</h3>
+        </div>
+        <button class="modal-close-btn" id="close-beer-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="beer-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Warm Mountain Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="footer-logo-img">
+          <p class="footer-motto">
+            Craft brewed in downtown Hendersonville, NC since 2011. Family friendly, dog friendly, and rooted in the community.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Explore Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beers.html">Our Beers On Tap</a></li>
+            <li><a href="events.html">Music &amp; Events</a></li>
+            <li><a href="taproom.html">The Patio &amp; Pretzels</a></li>
+            <li><a href="community.html">Community Story</a></li>
+            <li><a href="contact.html">Hours &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Visit &amp; Connect</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/pages/Southern-Appalachian-Brewery/186297024741055" target="_blank" rel="noopener noreferrer">Follow us on Facebook &rarr;</a></li>
+            <li><a href="tel:8286841235">Call: (828) 684-1235</a></li>
+            <li><a href="mailto:mail@sabrewery.com">Email: mail@sabrewery.com</a></li>
+            <li><a href="contact.html">822 Locust St, Hendersonville NC</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Southern Appalachian Brewery. All rights reserved. Please drink responsibly.</p>
+        <p class="footer-note">Handcrafted with love for Hendersonville, NC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="bottom-nav-icon">🏡</span>
+      <span class="bottom-nav-label">Home</span>
+    </a>
+    <a href="beers.html" class="bottom-nav-item active">
+      <span class="bottom-nav-icon">🍺</span>
+      <span class="bottom-nav-label">Beers</span>
+    </a>
+    <a href="events.html" class="bottom-nav-item">
+      <span class="bottom-nav-icon">📅</span>
+      <span class="bottom-nav-label">Events</span>
+    </a>
+    <a href="contact.html" class="bottom-nav-item">
+      <span class="bottom-nav-icon">⏰</span>
+      <span class="bottom-nav-label">Hours</span>
+    </a>
+    <a href="tel:8286841235" class="bottom-nav-item">
+      <span class="bottom-nav-icon">📞</span>
+      <span class="bottom-nav-label">Call</span>
+    </a>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

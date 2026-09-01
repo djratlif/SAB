@@ -358,7 +358,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: color var(--transition);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--honey-ale-light);
 }
 
@@ -373,8 +374,58 @@ h1, h2, h3, h4, h5, h6 {
   transition: width var(--transition);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
+}
+
+.mobile-nav-link.active {
+  color: var(--mountain-clay) !important;
+  font-weight: 700 !important;
+  border-bottom-color: var(--mountain-clay) !important;
+}
+
+/* --- Subpage Banner Styles --- */
+.page-banner {
+  padding: 3.5rem 0 3rem;
+  background: linear-gradient(180deg, #F3EDE2 0%, var(--bg-page) 100%);
+  border-bottom: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.breadcrumb-trail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb-trail a {
+  color: var(--mountain-blue);
+}
+
+.breadcrumb-trail a:hover {
+  color: var(--mountain-clay);
+}
+
+.breadcrumb-sep {
+  opacity: 0.5;
+}
+
+.page-banner-title {
+  font-size: clamp(2.2rem, 5vw, 3.25rem);
+  color: var(--mountain-blue-deep);
+  margin-bottom: 0.5rem;
+}
+
+.page-banner-subtitle {
+  font-size: 1.12rem;
+  color: var(--text-body);
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .header-actions {
