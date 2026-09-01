@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Southern Appalachian Brewery | Hendersonville, NC &bull; Craft Beer &amp; Community</title>
+  <meta name="description" content="A warm, homey craft microbrewery nestled in the Historic Depot District of Downtown Hendersonville, NC. Fresh local beers brewed 30 feet from where they're poured, dog & family-friendly beer garden, live music, and rotating food trucks.">
+  <meta name="theme-color" content="#243E63">
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Southern Appalachian Brewery | Hendersonville, NC">
+  <meta property="og:description" content="Chill mountain vibes, fresh craft beers on tap, dog-friendly patio, live bluegrass & jazz, and community gatherings in the Blue Ridge Mountains.">
+  <meta property="og:image" content="assets/images/logo.png">
+  
+  <!-- Google Fonts: Fraunces (Handcrafted Serif), Caveat (Artisan Script), Plus Jakarta Sans (Clean Modern Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="Southern Appalachian Brewery Home">
+        <img src="assets/images/logo.png" alt="Southern Appalachian Brewery Logo" class="header-logo-img">
+        <div class="brand-text">
+          <span class="brand-script">historic downtown</span>
+          <span class="brand-title">HENDERSONVILLE, NC</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#beers" class="nav-link">Our Beers</a></li>
+          <li><a href="#events" class="nav-link">Music &amp; Events</a></li>
+          <li><a href="#tasting-room" class="nav-link">The Patio &amp; Taproom</a></li>
+          <li><a href="#community" class="nav-link">Community &amp; Story</a></li>
+          <li><a href="#location" class="nav-link">Hours &amp; Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="btn btn-outline-mountain btn-sm staff-portal-btn" id="open-staff-modal-header" title="Staff Event Management">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          <span>Staff / Add Event</span>
+        </button>
+        <a href="#location" class="btn btn-primary btn-sm header-visit-btn">Visit Us</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="drawer-logo-img">
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#beers" class="mobile-nav-link">🍺 Fresh Beers On Tap</a></li>
+        <li><a href="#events" class="mobile-nav-link">📅 Music, Shows &amp; Calendar</a></li>
+        <li><a href="#tasting-room" class="mobile-nav-link">🥨 The Patio &amp; Food Trucks</a></li>
+        <li><a href="#community" class="mobile-nav-link">🎨 Local Art &amp; Community Story</a></li>
+        <li><a href="#location" class="mobile-nav-link">📍 Hours, Map &amp; Directions</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-outline-mountain btn-full" id="open-staff-modal-mobile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Staff / Add Event Demo
+        </button>
+        <div class="drawer-contact-info">
+          <p>📞 <a href="tel:8286841235">(828) 684-1235</a></p>
+          <p>📍 822 Locust St, Downtown Hendersonville, NC</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section: Warm, Welcoming, Blue Ridge Mountain Atmosphere -->
+  <section class="hero-section" id="hero">
+    <div class="hero-art-layer" aria-hidden="true">
+      <div class="mountain-watercolor-wash"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-card-main">
+        <div class="hero-logo-centerpiece">
+          <img src="assets/images/logo.png" alt="Southern Appalachian Brewery Logo" class="hero-main-logo" fetchpriority="high">
+        </div>
+
+        <div class="hero-tagline-wrap">
+          <span class="hero-script-tag">Chill vibes, local art &amp; mountain hospitality</span>
+          <h1 class="hero-heading">Craft Brewed 30 Feet From Where It's Poured.</h1>
+          <p class="hero-lead">
+            Welcome to Southern Appalachian Brewery. Pull up a chair on the sunny dog-friendly patio, grab a pint of small-batch Bohemian Pilsner or Belgian Amber, enjoy fresh hot pretzels, and listen to local mountain music in Hendersonville's Depot District.
+          </p>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <a href="#beers" class="btn btn-primary btn-lg">
+            <span>Explore What's On Tap</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#events" class="btn btn-secondary btn-lg">
+            <span>Upcoming Music &amp; Events</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+
+        <!-- Warm Highlights Row -->
+        <div class="hero-porch-highlights">
+          <div class="porch-item">
+            <span class="porch-icon">🐕</span>
+            <div>
+              <strong>Friendly Dogs Welcome</strong>
+              <p>Leashed pups loved on our patio</p>
+            </div>
+          </div>
+          <div class="porch-item">
+            <span class="porch-icon">🥨</span>
+            <div>
+              <strong>Underground Baking Co.</strong>
+              <p>Giant Bavarian pretzels fresh daily</p>
+            </div>
+          </div>
+          <div class="porch-item">
+            <span class="porch-icon">🎸</span>
+            <div>
+              <strong>Live Mountain Tunes</strong>
+              <p>Weekly Jazz, Bluegrass &amp; Folk</p>
+            </div>
+          </div>
+          <div class="porch-item">
+            <span class="porch-icon">🎯</span>
+            <div>
+              <strong>Lawn Games</strong>
+              <p>Cornhole, ladder golf &amp; board games</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft Beers On Tap Section -->
+  <section class="section beers-section" id="beers">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-script">honest, small-batch brewing</span>
+        <h2 class="section-title">Fresh Beers On Tap</h2>
+        <div class="watercolor-divider" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Because we brew right in the back room just 30 feet from the taps, our beer is as fresh as mountain water. From crisp Czech-style lagers to Belgian ales, bold IPAs, and velvety stouts.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="beer-filters" role="tablist" aria-label="Beer category filters">
+          <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Brews (8)</button>
+          <button class="filter-pill" data-filter="belgian" role="tab" aria-selected="false">Belgian &amp; Farmhouse</button>
+          <button class="filter-pill" data-filter="ipa" role="tab" aria-selected="false">IPAs &amp; Hoppy</button>
+          <button class="filter-pill" data-filter="lager-ale" role="tab" aria-selected="false">Lagers &amp; Ambers</button>
+          <button class="filter-pill" data-filter="dark" role="tab" aria-selected="false">Stouts &amp; Dark</button>
+        </div>
+      </div>
+
+      <!-- Beers Grid -->
+      <div class="beers-grid" id="beers-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Flight & Pretzel Experience Card -->
+      <div class="flight-community-card">
+        <div class="flight-text">
+          <span class="badge badge-clay">Taproom Ritual</span>
+          <h3>Try a Mountain Beer Flight</h3>
+          <p>
+            Can't settle on one style? Grab a four-pour flight served on handmade wooden paddles. We always recommend pairing your flight with a giant hot soft pretzel from our friends at <strong>Underground Baking Co.</strong> delivered fresh with stone-ground mustard.
+          </p>
+          <div class="flight-tags">
+            <span>🍺 4 x 4oz Pours of Your Choice</span>
+            <span>🥨 Fresh Salted Pretzels</span>
+            <span>📦 Growlers &amp; Cans To-Go</span>
+          </div>
+        </div>
+        <div class="flight-img-wrapper">
+          <img src="assets/images/beer-pretzels.jpg" alt="Craft beer flight and giant Bavarian pretzel" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Calendar & Events Section (The Main Solution) -->
+  <section class="section events-section" id="events">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-script">gather with neighbors</span>
+        <h2 class="section-title">Music, Food Trucks &amp; Events</h2>
+        <div class="watercolor-divider" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Weekly jazz jams, monthly bluegrass, Saturday morning brewery yoga, visiting food trucks, and seasonal celebrations like our Annual Oktoberfest!
+        </p>
+      </div>
+
+      <!-- Calendar Controls & Category Filter Toolbar -->
+      <div class="calendar-toolbar">
+        <!-- Category Filters -->
+        <div class="event-category-filters" id="event-filters">
+          <button class="event-filter-btn active" data-category="all">🌟 All Events</button>
+          <button class="event-filter-btn" data-category="music">🎸 Live Music</button>
+          <button class="event-filter-btn" data-category="food">🍔 Food Trucks</button>
+          <button class="event-filter-btn" data-category="yoga">🧘 Saturday Yoga</button>
+          <button class="event-filter-btn" data-category="special">🍻 Parties &amp; Specials</button>
+        </div>
+
+        <!-- View Switcher & Staff Trigger -->
+        <div class="calendar-view-controls">
+          <div class="view-toggle-group" role="group" aria-label="View toggle">
+            <button class="view-toggle-btn active" id="view-calendar-btn" aria-pressed="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Month Calendar</span>
+            </button>
+            <button class="view-toggle-btn" id="view-agenda-btn" aria-pressed="false">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              <span>Agenda Timeline</span>
+            </button>
+          </div>
+
+          <button class="btn btn-outline-mountain btn-sm staff-add-event-btn" id="open-staff-modal-section">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            <span>+ Add Event (Staff Demo)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW 1: Community Calendar Month Grid -->
+      <div class="calendar-container" id="calendar-view">
+        <div class="calendar-month-header">
+          <div class="month-title-wrap">
+            <h3 class="current-month-heading" id="calendar-month-heading">September 2026</h3>
+            <span class="month-subtitle" id="calendar-month-stats">14 Events on the Mountain</span>
+          </div>
+          <div class="month-nav-buttons">
+            <button class="cal-nav-btn" id="cal-prev-month" aria-label="Previous month">&larr; Prev</button>
+            <button class="cal-today-btn" id="cal-today-btn">This Month</button>
+            <button class="cal-nav-btn" id="cal-next-month" aria-label="Next month">Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Days of Week Header -->
+        <div class="calendar-grid-header">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <!-- Calendar Days Grid (Populated by JS) -->
+        <div class="calendar-grid-body" id="calendar-grid-body"></div>
+      </div>
+
+      <!-- VIEW 2: Upcoming Agenda Timeline View -->
+      <div class="agenda-container" id="agenda-view" style="display: none;">
+        <div class="agenda-list" id="agenda-list">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- Architecture Guidance Box (Modern Event Solutions for Brewery) -->
+      <div class="calendar-guidance-box">
+        <div class="guidance-header">
+          <div class="guidance-badge">💡 Recommendation for SAB Team</div>
+          <h4>How Your Friend Can Keep This Calendar Updated in 15 Seconds:</h4>
+          <p>No need for complicated web dashboards or fragile plugins. Here are the most relaxed, low-stress solutions available today:</p>
+        </div>
+
+        <div class="guidance-grid">
+          <div class="guidance-card active-card">
+            <div class="card-icon">📱</div>
+            <h5>1. Google Calendar / iCal Sync (Top Pick)</h5>
+            <p>Staff creates an event right on their iPhone/Android Google Calendar app. The website reads the feed and automatically displays it in this design. <strong>Zero passwords, zero CMS hassle.</strong></p>
+          </div>
+
+          <div class="guidance-card">
+            <div class="card-icon">📝</div>
+            <h5>2. Notion or Airtable App</h5>
+            <p>Open the free Notion/Airtable app on mobile, type the band name, upload a photo of the band or food menu, and it live-syncs directly to the website cards.</p>
+          </div>
+
+          <div class="guidance-card">
+            <div class="card-icon">🌿</div>
+            <h5>3. Simple Headless CMS</h5>
+            <p>A lightweight custom editor (like Sanity.io or Netlify Decap) gives the brewery custom fields for beers and music with one-click publishing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Tasting Room & Patio Experience -->
+  <section class="section tasting-room-section" id="tasting-room">
+    <div class="container">
+      <div class="tasting-room-grid">
+        <div class="tasting-info">
+          <span class="section-script">warm &amp; welcoming</span>
+          <h2 class="section-title">The Patio &amp; Tasting Room</h2>
+          <div class="watercolor-divider" style="margin: 0 0 1.5rem 0;" aria-hidden="true"></div>
+          <p class="lead-text">
+            We built our tasting room to feel like your favorite neighborhood front porch. Unpretentious, family-friendly, full of laughter, and always welcoming to well-mannered four-legged friends.
+          </p>
+
+          <div class="features-list">
+            <div class="feature-item">
+              <span class="f-icon">🐾</span>
+              <div>
+                <strong>Dog Friendly Outdoor Garden</strong>
+                <p>Dogs on leashes are always welcome outside. We have fresh water bowls and plenty of shade.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="f-icon">🥖</span>
+              <div>
+                <strong>Local Baked Goodies &amp; Food Trucks</strong>
+                <p>Fresh giant pretzels delivered from Underground Baking Co. every weekend, plus visiting food trucks Wednesday through Sunday.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="f-icon">🌾</span>
+              <div>
+                <strong>Wine, Cider &amp; Non-Alcoholic Drinks</strong>
+                <p>We serve local ciders, hand-selected wines, sparkling waters, and craft sodas for non-drinkers and minors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tasting-visual">
+          <div class="porch-photo-card">
+            <img src="assets/images/patio.jpg" alt="Outdoor beer garden patio with picnic tables, cornhole, and food truck" loading="lazy">
+            <div class="photo-caption">
+              <span>Depot District Beer Garden &bull; Hendersonville, NC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Story Section -->
+  <section class="section community-section" id="community">
+    <div class="container">
+      <div class="community-card">
+        <div class="community-text">
+          <span class="section-script">roots in the blue ridge</span>
+          <h2 class="section-title">Brewed with Community at Heart</h2>
+          <div class="watercolor-divider" style="margin: 0 0 1.5rem 0;" aria-hidden="true"></div>
+          <p>
+            When <strong>Andy &amp; Kelly Cubbin</strong> founded Southern Appalachian Brewery in 2011, they wanted to create more than just a brewery—they wanted a true community watering hole where neighbors become friends, local artists share their craft, and everyone feels at home.
+          </p>
+          <p>
+            Operating out of a restored historic warehouse at the corner of Locust and 8th Avenue (Bearcat), we proudly support local Henderson County musicians, non-profits, running clubs, and mountain artisans.
+          </p>
+          <div class="quote-card">
+            <p>"No pretension. Just honest craft beer, good neighbors, and mountain air."</p>
+            <span class="quote-sign">&mdash; Andy &amp; Kelly Cubbin</span>
+          </div>
+        </div>
+
+        <div class="community-badges">
+          <div class="community-badge-item">
+            <span class="c-num">2011</span>
+            <span class="c-lbl">Hendersonville's Pioneer Microbrewery</span>
+          </div>
+          <div class="community-badge-item">
+            <span class="c-num">30 ft</span>
+            <span class="c-lbl">From Fermenter to Tap Glass</span>
+          </div>
+          <div class="community-badge-item">
+            <span class="c-num">100%</span>
+            <span class="c-lbl">Independent &amp; Family Owned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location, Hours & Contact Section -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-script">come say hello</span>
+        <h2 class="section-title">Hours &amp; Location</h2>
+        <div class="watercolor-divider" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Just one block east of Main Street in Downtown Hendersonville's Depot District. Easy free street parking.
+        </p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Hours Card -->
+        <div class="homey-card hours-card">
+          <div class="card-status-header">
+            <span class="status-dot pulse" id="hours-status-dot"></span>
+            <span id="hours-status-title" style="font-weight: 700; color: var(--mountain-blue);">Taproom Schedule</span>
+          </div>
+
+          <h3 class="card-inner-title">Weekly Taproom Hours</h3>
+          <ul class="hours-list" id="hours-list">
+            <li data-day="0" class="hours-row">
+              <span class="day-name">Sunday</span>
+              <span class="day-time">2:00 PM &ndash; 7:00 PM</span>
+            </li>
+            <li data-day="1" class="hours-row">
+              <span class="day-name">Monday</span>
+              <span class="day-time">Closed <small>(Summers: 4pm-9pm)</small></span>
+            </li>
+            <li data-day="2" class="hours-row">
+              <span class="day-name">Tuesday</span>
+              <span class="day-time text-muted">Closed</span>
+            </li>
+            <li data-day="3" class="hours-row">
+              <span class="day-name">Wednesday</span>
+              <span class="day-time">4:00 PM &ndash; 8:30 PM <small>(Jazz Night)</small></span>
+            </li>
+            <li data-day="4" class="hours-row">
+              <span class="day-name">Thursday</span>
+              <span class="day-time">4:00 PM &ndash; 8:30 PM</span>
+            </li>
+            <li data-day="5" class="hours-row">
+              <span class="day-name">Friday</span>
+              <span class="day-time">4:00 PM &ndash; 9:30 PM</span>
+            </li>
+            <li data-day="6" class="hours-row">
+              <span class="day-name">Saturday</span>
+              <span class="day-time">2:00 PM &ndash; 9:30 PM <small>(Yoga @ 12pm)</small></span>
+            </li>
+          </ul>
+
+          <div class="address-footer">
+            <div>
+              <strong>Southern Appalachian Brewery</strong>
+              <p>822 Locust Street, Hendersonville, NC 28792</p>
+              <p class="address-sub">Corner of Locust &amp; Bearcat (8th Avenue)</p>
+            </div>
+            <div class="map-links">
+              <a href="https://maps.google.com/?q=822+Locust+Street,+Hendersonville,+NC+28792" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Maps &rarr;</a>
+              <a href="https://maps.apple.com/?address=822+Locust+St,+Hendersonville,+NC+28792" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Apple Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="homey-card contact-card">
+          <h3 class="card-inner-title">Get in Touch</h3>
+          <p class="contact-intro">Planning a gathering, inquiring about booking your band, or scheduling a food truck? Drop Andy &amp; Kelly a line!</p>
+          
+          <div class="quick-pills">
+            <a href="tel:8286841235" class="q-pill">📞 (828) 684-1235</a>
+            <a href="mailto:mail@sabrewery.com" class="q-pill">✉️ mail@sabrewery.com</a>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name *</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Andy Smith">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" required placeholder="andy@example.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-topic">Inquiry Type</label>
+              <select id="contact-topic" name="topic">
+                <option value="general">General Visiting / Taproom Info</option>
+                <option value="music">Musician / Band Booking</option>
+                <option value="foodtruck">Food Truck Application</option>
+                <option value="private-party">Private Event / Party Reservation</option>
+                <option value="beers">Kegs / Beer Availability</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" rows="3" required placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+              <span>Send Note to Brewery</span>
+            </button>
+            <div class="form-feedback" id="contact-feedback" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Warm Mountain Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="footer-logo-img">
+          <p class="footer-motto">
+            Craft brewed in downtown Hendersonville, NC since 2011. Family friendly, dog friendly, and rooted in the community.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#beers">Our Beers On Tap</a></li>
+            <li><a href="#events">Live Music &amp; Events</a></li>
+            <li><a href="#tasting-room">The Patio &amp; Pretzels</a></li>
+            <li><a href="#community">Community Story</a></li>
+            <li><a href="#location">Hours &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Visit &amp; Connect</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/pages/Southern-Appalachian-Brewery/186297024741055" target="_blank" rel="noopener noreferrer">Follow us on Facebook &rarr;</a></li>
+            <li><a href="tel:8286841235">Call: (828) 684-1235</a></li>
+            <li><a href="mailto:mail@sabrewery.com">Email: mail@sabrewery.com</a></li>
+            <li><a href="https://maps.google.com/?q=822+Locust+Street,+Hendersonville,+NC+28792" target="_blank" rel="noopener noreferrer">822 Locust St, Hendersonville NC</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Southern Appalachian Brewery. All rights reserved. Please drink responsibly.</p>
+        <p class="footer-note">Handcrafted with love for Hendersonville, NC &bull; Mobile-First &amp; Fast</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Bottom Navigation Bar (Refined for Warm Vibe) -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
+    <a href="#beers" class="bottom-nav-item">
+      <span class="bottom-nav-icon">🍺</span>
+      <span class="bottom-nav-label">Beers</span>
+    </a>
+    <a href="#events" class="bottom-nav-item active">
+      <span class="bottom-nav-icon">📅</span>
+      <span class="bottom-nav-label">Events</span>
+    </a>
+    <a href="#location" class="bottom-nav-item">
+      <span class="bottom-nav-icon">⏰</span>
+      <span class="bottom-nav-label">Hours</span>
+    </a>
+    <a href="https://maps.google.com/?q=822+Locust+Street,+Hendersonville,+NC+28792" target="_blank" rel="noopener noreferrer" class="bottom-nav-item">
+      <span class="bottom-nav-icon">🗺️</span>
+      <span class="bottom-nav-label">Map</span>
+    </a>
+    <a href="tel:8286841235" class="bottom-nav-item">
+      <span class="bottom-nav-icon">📞</span>
+      <span class="bottom-nav-label">Call</span>
+    </a>
+  </nav>
+
+  <!-- MODAL 1: Day Events / Event Detail Modal -->
+  <div class="modal-backdrop" id="event-detail-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="badge badge-mountain" id="modal-event-date-badge">Event Date</span>
+          <h3 id="modal-event-title">Event Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-event-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-event-body"></div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Staff Event Manager (Interactive Demonstration) -->
+  <div class="modal-backdrop" id="staff-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card staff-modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="badge badge-pine">Staff Event Manager Demo</span>
+          <h3>Add / Publish Brewery Events</h3>
+        </div>
+        <button class="modal-close-btn" id="close-staff-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="staff-intro">
+          This prototype demonstrates how effortlessly staff can add a new live show, yoga class, or food truck from their phone or laptop. It immediately appears on the live calendar and persists in local storage.
+        </p>
+
+        <form id="add-event-form" class="staff-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="new-event-title">Performer or Event Name *</label>
+              <input type="text" id="new-event-title" required placeholder="e.g. Jason DeCristofaro Jazz Jam">
+            </div>
+            <div class="form-group">
+              <label for="new-event-category">Category *</label>
+              <select id="new-event-category" required>
+                <option value="music">🎸 Live Music / Concert</option>
+                <option value="food">🍔 Food Truck</option>
+                <option value="yoga">🧘 Saturday Yoga Flow</option>
+                <option value="special">🍻 Brewery Festival / Special</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="new-event-date">Date *</label>
+              <input type="date" id="new-event-date" required>
+            </div>
+            <div class="form-group">
+              <label for="new-event-time">Time Range *</label>
+              <input type="text" id="new-event-time" required placeholder="e.g. 6:00 PM &ndash; 8:00 PM">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="new-event-foodtruck">Featured Food Truck (Optional)</label>
+            <input type="text" id="new-event-foodtruck" placeholder="e.g. BaseCamp Grub Burgers">
+          </div>
+
+          <div class="form-group">
+            <label for="new-event-desc">Event Description</label>
+            <textarea id="new-event-desc" rows="3" placeholder="Band bio, cover details, link to artist or food truck menu..."></textarea>
+          </div>
+
+          <div class="staff-form-actions">
+            <button type="submit" class="btn btn-primary" id="save-event-btn">
+              <span>+ Publish to Calendar</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="reset-events-btn">
+              <span>Reset to Defaults</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Beer Detail & Pairing Modal -->
+  <div class="modal-backdrop" id="beer-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="badge badge-mountain" id="beer-modal-style">Style</span>
+          <h3 id="beer-modal-name">Beer Name</h3>
+        </div>
+        <button class="modal-close-btn" id="close-beer-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="beer-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
