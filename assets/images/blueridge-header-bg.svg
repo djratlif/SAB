@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" preserveAspectRatio="none" width="100%" height="100%">
+  <defs>
+    <!-- Sky / High atmosphere gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#142642" />
+      <stop offset="50%" stop-color="#213d66" />
+      <stop offset="100%" stop-color="#315485" />
+    </linearGradient>
+
+    <!-- Mountain Ridge 1 (Far mist) -->
+    <linearGradient id="ridgeFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#648bb9" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#416999" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Mountain Ridge 2 (Mid ridge) -->
+    <linearGradient id="ridgeMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3e699b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2a4d77" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Mountain Ridge 3 (Near ridge) -->
+    <linearGradient id="ridgeNear" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27466e" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#193150" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Mountain Ridge 4 (Foreground base) -->
+    <linearGradient id="ridgeBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15273f" />
+      <stop offset="100%" stop-color="#0d192a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Base -->
+  <rect width="1600" height="200" fill="url(#skyGrad)" />
+
+  <!-- Ridge Layer 1 (Far Distant Blue Ridge Peaks) -->
+  <path d="M0,120 Q120,70 240,105 T480,85 T720,110 T960,75 T1200,100 T1440,80 T1600,105 L1600,200 L0,200 Z" fill="url(#ridgeFar)" />
+
+  <!-- Ridge Layer 2 (Mid-Distance Layered Peaks) -->
+  <path d="M0,135 Q160,95 320,125 T640,105 T960,130 T1280,100 T1600,125 L1600,200 L0,200 Z" fill="url(#ridgeMid)" />
+
+  <!-- Ridge Layer 3 (Closer Rolling Blue Ridge Mountains) -->
+  <path d="M0,150 Q140,120 280,145 T560,125 T840,150 T1120,130 T1400,148 T1600,138 L1600,200 L0,200 Z" fill="url(#ridgeNear)" />
+
+  <!-- Ridge Layer 4 (Foreground Silhouette Line - Inspired by the logo's black mountain contour) -->
+  <path d="M0,175 Q90,162 180,172 T360,165 T540,174 T720,166 T900,175 T1080,164 T1260,173 T1440,165 T1600,172 L1600,200 L0,200 Z" fill="url(#ridgeBase)" />
+
+  <!-- Subtle Top & Bottom Gradient Overlay for contrast -->
+  <rect width="1600" height="200" fill="url(#skyGrad)" opacity="0.25" />
+</svg>
