@@ -30,7 +30,6 @@
       <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="beers.html" class="nav-link">Our Beers</a></li>
           <li><a href="events.html" class="nav-link">Music &amp; Events</a></li>
           <li><a href="taproom.html" class="nav-link active">The Patio &amp; Taproom</a></li>
@@ -53,11 +52,12 @@
     <!-- Mobile Nav Drawer -->
     <div class="mobile-drawer" id="mobile-drawer">
       <div class="mobile-drawer-header">
-        <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="drawer-logo-img">
+        <a href="index.html" aria-label="Home">
+          <img src="assets/images/logo.png" alt="Southern Appalachian Brewery" class="drawer-logo-img">
+        </a>
         <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
       </div>
       <ul class="mobile-nav-list">
-        <li><a href="index.html" class="mobile-nav-link">🏡 Home</a></li>
         <li><a href="beers.html" class="mobile-nav-link">🍺 Fresh Beers On Tap</a></li>
         <li><a href="events.html" class="mobile-nav-link">📅 Music, Shows &amp; Calendar</a></li>
         <li><a href="taproom.html" class="mobile-nav-link active">🥨 The Patio &amp; Food Trucks</a></li>
